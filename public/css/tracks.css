@@ -11,7 +11,6 @@ header{
     height:10vh;
     background-color: black;
     box-shadow: 0 2px 5px rgba(73, 212, 84, 0.1); 
-
     position: fixed;
     left: 0%;
     right: 0%; 
@@ -32,16 +31,13 @@ header{
 }
 
 #music-player {
-    display: flex;
-
-    justify-content:space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     background-color: black;
     position: fixed;
     bottom: 0;
     left: 0;
-
     right: 0;
     box-shadow: 0 -2px 5px rgba(73, 212, 84, 0.1);
     height: 12vh;
@@ -51,15 +47,12 @@ header{
     flex-direction: column;
     gap: 10px;
     align-items: center;
-
     justify-content: center;
-    width: 300px;
 }
 .controls{
     display: flex;
     justify-content: center;
     align-items: center;
- 
 }
 
 .controls button {
@@ -96,7 +89,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 300px;
 }
 
 #volume-control {
@@ -111,7 +103,6 @@ header{
 #track-info {
     display: flex;
     align-items: center;
-    width: 300px;
 }
 
 #track-info img {
@@ -133,7 +124,6 @@ header{
     width: 50px; 
     height: 50px; 
     border-radius: 5px;
-
 }
 
 .hidden {
@@ -142,4 +132,48 @@ header{
 
 .visible {
     visibility: visible;
+}
+
+#track-columns{
+    margin-top: 11vh;
+    color: rgb(161, 161, 161);
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr;
+}
+
+#tracks-container{
+    color: white;
+}
+
+hr{
+    border: 0.5px solid rgb(161, 161, 161);
+}
+
+#tracks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(73, 212, 84, 0.1);
+    
+}
+
+.track{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.track:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 10px rgba(228, 91, 91, 0.3);
+    cursor: pointer;
+}
+
+.track-name, .track-artist, .track-album, .track-duration{
+    color: white;
 }
