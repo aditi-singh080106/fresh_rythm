@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-size: large;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+body nav{
+    height: 10vh;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00124f;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .icon img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar .search input{
+    height:30px;
+    width: 260px;
+    background: #b9c9ff;
+}
+.navbar .premium button{
+    width:130px;
+    height:30px;
+    background:#b9c9ff ;
+}
+.navbar .login button{
+    width:150px;
+    height:30px;
+    color: #ffffff;
+    background-color: #6c8cf4;
+}
+.main{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main aside{
+    width:15vw;
+    height: 95vh;
+    background-color: #353434;
+    border-radius: 2%;
+    /* position: fixed; */
+}
+.main aside ul{
+    margin: 20px;
+    list-style: none;
+}
+.main aside ul li{
+    padding: 30px;
+}
+.content main{
+    width: 80vw;
+    /* margin: 8px; */
+    /* overflow-y: scroll; */
+}
+main h2{
+    margin: 8px;
+}
+main .img-artist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .circle{
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: 15px;
+    justify-items: space-around;
+}
+main .circle img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+main .circle a{
+    text-decoration: none;
+    color: aliceblue;
+}
+main .top-charts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main .charts-items span h4{
+   background-color: #3a67f9;    yaha pe background color heading k hia      
+}*/
+main .charts-items .square{
+    height: 130px;
+    width: 130px;
+    border: 1px solid #ffffff;
+    margin: 30px;
+    border-radius: 8%;
+}
+main .charts-items .square img{
+    height: 130px;
+    width: 130px;
+    border-radius: 8%;
+}
+main .charts-items .top-charts .square p .album-name{
+    text-align: center;
+}
+main .charts-items .top-charts .square p .date{
+    text-align: center;
+    color: #2e2828;
+}
+main .chill-out h2{
+    margin-top: 20px;
+}
+main .chill-out .poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .chill-out .chill-out-items{
+    width: 190px;
+    height: 170px;
+    margin: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8%;
+}
+main .chill-out .chill-out-items img{
+    width: 190px;
+    height: 170px;
+    /* margin: 10px; */
+    border: 1px solid #ffffff;
+    border-radius: 8%;
+}
+main .chill-out .chill-out-items p{
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    /* background-color: #2e2828; */
+    margin-top: 50px;
+}
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer ul{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+footer .footer li{
+    list-style: none;
+}
